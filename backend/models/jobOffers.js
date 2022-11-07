@@ -3,17 +3,19 @@ const mongoose = require('mongoose')
 const JobOfferSchema = new mongoose.Schema({
     NameScoiete:{
         type:String,
-        required:true
+         required:true
     },
     adress:{
         type:String,
-        require:true
+         require:true
     },
     Postesvacants:{
-        type:String,required:true
+        type:String,
+         required:true
     },
     Typedepostes:{
-        type:String,required:true},
+        type:String,
+        required:true},
         Experiences:{
             type:String,required:true
         },
