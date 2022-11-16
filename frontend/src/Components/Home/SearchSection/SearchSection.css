@@ -1,0 +1,42 @@
+.css-selector {
+    background-image: linear-gradient(90deg,#bd838c,#597f6f,#83aabd);
+    background-size: 600% 600%;
+
+color: antiquewhite;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+.animated-gradient {
+    animation: animateBg 14s linear infinite;
+    background-image: linear-gradient(90deg,#246661,#b66d52);
+    background-size: 400% 100%;
+  }
+  @keyframes animateBg {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+  }
+
+
+  

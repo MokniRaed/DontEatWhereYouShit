@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "rsuite/dist/rsuite.min.css";
+import { Route, Routes } from "react-router-dom";
+import Navigator from "./Components/Navigator/Navigator";
+import Layout from "./Components/Layout/Layout";
+import Signin from "./Components/Auth/SignIn/Signin";
+import Footer from "./Components/Footer/Footer";
+import { Home } from "./Components/Home/Home";
+import Signup from "./Components/Auth/SignUp/Signup";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Layout header={<Navigator />} content={<Home></Home>} footer={<Footer/>} />
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <Layout header={<Navigator />} content={<Signin/>} footer={<Footer/>} />
+          }
+        />
+        <Route
+          path="/signup"
+          element={
+            <Layout header={<Navigator />} content={<Signup/>} footer={<Footer/>} />
+          }
+        />
+      </Routes>
     </div>
   );
 }

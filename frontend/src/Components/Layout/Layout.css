@@ -1,5 +1,5 @@
 body { 
-    font-size: 20px; 
+    font-size: 16px; 
     font-weight: 400;
     -webkit-transition-property: font-size;
     -moz-transition-property: font-size;
@@ -8,4 +8,22 @@ body {
     -moz-transition-duration: 0.5s, 0.5s;
     transition-duration: 0.5s, 0.5s; 
     text-rendering: optimizeLegibility; 
+}
+
+ h2 {
+	font-size: 24px;
+}
+
+ h3 {
+	font-size: 40px;
+}
+
+ h4 {
+	font-size: 25px;
+}
+h5 {
+	font-size: 20px;
+}
+p{
+    font-weight: 300;
 }
